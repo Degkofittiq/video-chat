@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Video Chat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div id="setup-form">
+        <h2>Create or Join a Call</h2>
+        <input type="text" id="channel-input" placeholder="Enter call name">
+        <button id="create-btn">Create Call</button>
+    </div>
+
+    <div id="main-container">
+        <div id="share-details" style="display: none;">
+            <div class="share-link-container">
+                <input type="text" id="share-link" readonly>
+                <button id="copy-btn">Copy Link</button>
+            </div>
+        </div>
+
+        <div id="stream-wrapper" style="display: none;">
+            <div id="video-streams"></div>
+            <div id="stream-controls">
+                <button id="leave-btn">Leave Stream</button>
+                <button id="mic-btn">Mic On</button>
+                <button id="camera-btn">Camera on</button>
+                <button id="record-btn">Start Recording</button>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="AgoraRTC_N-4.7.3.js"></script> -->
+ <!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
+  <script src="AgoraWebSDK_N-v4.22.2.js"></script>
+<script src='main.js'></script>
+</html>
